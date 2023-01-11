@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-Student = __import__('10-student').Student
+MyClass = __import__('8-my_class').MyClass
+class_to_json = __import__('8-class_to_json').class_to_json
 
-student_1 = Student("John", "Doe", 23)
-student_2 = Student("Bob", "Dylan", 27)
+m = MyClass("John")
+m.number = 89
+print(type(m))
+print(m)
 
-j_student_1 = student_1.to_json()
-j_student_2 = student_2.to_json(['first_name', 'age'])
-j_student_3 = student_2.to_json(['middle_name', 'age'])
-
-print(j_student_1)
-print(j_student_2)
-print(j_student_3)
+mj = class_to_json(m)
+print(type(mj))
+print(mj)
