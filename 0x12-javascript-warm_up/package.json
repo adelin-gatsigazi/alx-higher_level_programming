@@ -1,0 +1,11 @@
+{
+  "name": "0x12-javascript-warm_up",
+  "version": "1.0.0",
+  "description": "0x12. JavaScript - Warm up Background Context JavaScript is used for many things. Here, you will use JavaScript for 2 reasons:",
+  "main": "0-javascript_is_amazing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
