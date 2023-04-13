@@ -1,7 +1,5 @@
 #!/usr/bin/node
 
-if (process.argv === undefined) {
+if (!process.argv) {
   console.log('No argument');
-} else {
-  console.log('process.argv');
 }
