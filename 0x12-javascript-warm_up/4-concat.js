@@ -1,6 +1,4 @@
 #!/usr/bin/node
 
-const [noun = "thing", adjective = "undefined"] = process.argv.slice(2);
-
-console.log(`${noun} is ${adjective}.`);
-
+const [arg1 = "No argument", arg2 = "No argument"] = process.argv.slice(2);
+console.log(`${arg1} is ${arg2}`);
