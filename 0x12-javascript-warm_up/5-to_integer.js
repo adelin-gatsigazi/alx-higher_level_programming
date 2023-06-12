@@ -7,4 +7,3 @@ if (arg) {
 } else {
   console.log("Not a number");
 } 
-
