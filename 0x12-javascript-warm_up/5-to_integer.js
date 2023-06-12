@@ -6,4 +6,5 @@ if (arg) {
   console.log('My number: ' + arg);
 } else {
   console.log("Not a number");
-}
+} 
+
