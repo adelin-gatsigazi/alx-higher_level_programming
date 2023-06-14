@@ -1,5 +1,6 @@
 #!/usr/bin/node
 const list = require('./100-data').list;
+const multiIdx = (value, index) => value * index;
+const newlist = list.map(multiIdx);
 console.log(list);
-const listed = list.map((num, elem) => num * elem);
-console.log(listed);
+console.log(newlist); 
