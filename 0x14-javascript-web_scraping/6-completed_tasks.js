@@ -18,9 +18,9 @@ request(url, function (err, response, body) {
           completed[task.userId]++;
         }
       }
-    }
+    });
     console.log(completed);
   } else {
     console.log('An error occured. Status code: ' + response.statusCode);
   }
-}); 
+});
