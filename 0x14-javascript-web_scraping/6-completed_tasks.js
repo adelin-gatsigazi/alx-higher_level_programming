@@ -18,9 +18,9 @@ request(apiUrl, (error, response, body) => {
           completedTasksByUser[todo.userId] = 1;
         }
       }
-   
+    });
 
     console.log(completedTasksByUser);
-     });
   }
 });
+
