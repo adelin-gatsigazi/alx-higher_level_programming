@@ -7,12 +7,7 @@ request(apiUrl, (error, response, body) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API response:', response.statusCode);
-    console.log('API data:', body);
-    
     const todos = JSON.parse(body);
-    console.log('Parsed todos:', todos);
-    
     const completedTasksByUser = {};
 
     todos.forEach(todo => {
@@ -25,6 +20,7 @@ request(apiUrl, (error, response, body) => {
       }
     });
 
-    console.log('Completed tasks by user:', completedTasksByUser);
+    console.log(completedTasksByUser);
   }
 });
+
